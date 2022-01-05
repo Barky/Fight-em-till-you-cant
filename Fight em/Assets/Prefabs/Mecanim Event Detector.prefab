@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8992778118652186381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3779310548747149744}
+  - component: {fileID: 2937275468151035245}
+  m_Layer: 0
+  m_Name: Mecanim Event Detector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3779310548747149744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8992778118652186381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.049627, y: 0.9145174, z: 4.6543384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2937275468151035245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8992778118652186381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a6360a7e47ce34cb62999cd3a4f5ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+  - animatorController: {fileID: 9100000, guid: 8db498fa3564d0c49914eaba533aef2f, type: 2}
+    layer: 0
+    stateNameHash: 316574840
+    events:
+    - functionName: FirstSlashTrailStart
+      normalizedTime: 0.15
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: FirstSlashTrailEnd
+      normalizedTime: 0.38
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 9100000, guid: 8db498fa3564d0c49914eaba533aef2f, type: 2}
+    layer: 0
+    stateNameHash: 499339138
+    events:
+    - functionName: ThirdSlashTrailStart
+      normalizedTime: 0.017
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: ThirdSlashTrailEnd
+      normalizedTime: 0.44
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: ThirdSlashEffect
+      normalizedTime: 0.56
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 9100000, guid: 8db498fa3564d0c49914eaba533aef2f, type: 2}
+    layer: 0
+    stateNameHash: -1948787262
+    events:
+    - functionName: SecondSlashTrailStart
+      normalizedTime: 0.05
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: SecondSlashTrailEnd
+      normalizedTime: 0.59
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 9100000, guid: 8db498fa3564d0c49914eaba533aef2f, type: 2}
+    layer: 0
+    stateNameHash: 1655256879
+    events:
+    - functionName: skillOne
+      normalizedTime: 0.25
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: skillOneEnd
+      normalizedTime: 0.59
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 9100000, guid: 8db498fa3564d0c49914eaba533aef2f, type: 2}
+    layer: 0
+    stateNameHash: 151993272
+    events:
+    - functionName: skillTwo
+      normalizedTime: 0.15
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: skillTwoEnd
+      normalizedTime: 0.98
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 9100000, guid: 8db498fa3564d0c49914eaba533aef2f, type: 2}
+    layer: 0
+    stateNameHash: -451368005
+    events:
+    - functionName: skillThree
+      normalizedTime: 0.1
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: skillThreeEnd
+      normalizedTime: 0.98
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  lastEdit: {fileID: 0}
