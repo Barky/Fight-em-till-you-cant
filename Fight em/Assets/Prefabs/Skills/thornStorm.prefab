@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400000}
+  - component: {fileID: 5678134687241277322}
+  - component: {fileID: 7452563572258693967}
   m_Layer: 0
   m_Name: thornStorm
   m_TagString: ground
@@ -33,6 +35,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5678134687241277322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a13ab1c84f5a848a4bf558373620b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillPrefabs:
+  - {fileID: 100002, guid: 3537826941f13d8448e00a0558ded789, type: 3}
+  HowManyTime: 15
+  SpawnInterval: 0.75
+  x_Width: 1
+  y_Width: 0
+  z_Width: 1
+  x_RotMax: 20
+  y_RotMax: 0
+  z_RotMax: 20
+  AllUseSameRotation: 0
+--- !u!114 &7452563572258693967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a839ebf94154f4daf0b03bcc9b8859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 2
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0

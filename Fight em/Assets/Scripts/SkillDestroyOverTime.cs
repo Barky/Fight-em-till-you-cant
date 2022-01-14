@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkillDestroyOverTime : MonoBehaviour
 {
-    private float timer = 2f;
+    public float timer = 2f;
 
     private void Start()
     {
