@@ -19406,6 +19406,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fc5c4acfbb697e408e135b0f7ca752a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 5
+  y: 0
+  z: 0
+  local: 1
 --- !u!114 &5365244169461949994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19418,6 +19422,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 825946bb254314d4b841298b73fa9ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignorelayers:
+    serializedVersion: 2
+    m_Bits: 247
+  skillPrefab: {fileID: 100014, guid: 654746e5424740344851ed984f7ac7ce, type: 3}
+  radius: 0.2
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 0

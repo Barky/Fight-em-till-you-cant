@@ -40,6 +40,7 @@ public class Skill_Prefab_Generator : MonoBehaviour
     }
     private void Update()
     {
+        // býçak atma scripti
         TimeCounter += Time.deltaTime;
 
         if(TimeCounter > trigger && EffectCounter <= HowManyTime)
