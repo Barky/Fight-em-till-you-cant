@@ -12,10 +12,10 @@ public class AnimationStates
 
     public static string ENEMY_ATTACK = "Attack";
     public static string ENEMY_RUN = "Run";
-    public static string ENEMY_DAMAGE = "Damage";
-    public static string ENEMY_WALK = "Walk";
-    public static string ENEMY_STAND = "Stand";
-    public static string ENEMY_DEATH = "Death";
+    public static string ENEMY_BEATTACKED = "BeAttacked";
+    public static string ENEMY_DEAD = "Dead";
+    public static string ENEMY_VICTORY = "Victory";
+    public static string ENEMY_SPEED = "Speed";
 
 
 }
