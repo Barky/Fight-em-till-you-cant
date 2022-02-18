@@ -11,7 +11,7 @@ public class Enemy_AI : MonoBehaviour
     private CapsuleCollider col;
     private Animator anim;
 
-    public float chaseSpeed, multiplier;
+    public float chaseSpeed, walkSpeed;
 
     private NavMeshAgent navAgent;
     public Transform[] navpoints;
@@ -47,7 +47,8 @@ public class Enemy_AI : MonoBehaviour
 
         if(enemyHealth.realHealth > 0)
         {
-            if(distance > 7f)
+            transform.LookAt(Player);
+            if(distance > 4f)
             {
                  Search();
 
@@ -66,30 +67,52 @@ public class Enemy_AI : MonoBehaviour
                     Attack();
                 }
 
-                transform.LookAt(Player);
+                
 
             }
         }
 
+        if (enemyHealth.realHealth <= 0)
+        {
+            col.enabled = false;
+        }
+
+        if (playerHealth.realHealth <= 0)
+        {
+            // EnemyVictory()
+        }
+
+        if (victory)
+        {
+            //EnemyIsVıctory()
+        }
     }
 
     void Search()
     {
         if(navAgent.remainingDistance <= 0.5f)
         {
-            anim.SetBool(AnimationStates.ENEMY_RUN, false);
-            anim.SetFloat(AnimationStates.ENEMY_SPEED, 0f);
+            
+            
             anim.SetBool(AnimationStates.ENEMY_ATTACK, false);
 
             if (navIndex == navpoints.Length - 1) navIndex = 0;
             else navIndex++;
 
             navAgent.SetDestination(navpoints[navIndex].position);
+            anim.SetBool(AnimationStates.ENEMY_RUN, true);
+
+            rb.AddForce((navAgent.destination - transform.position) * chaseSpeed * Time.deltaTime);
+            transform.LookAt((navAgent.destination));
         }
         else
         {
-            anim.SetBool(AnimationStates.ENEMY_RUN, false);
-            anim.SetFloat(AnimationStates.ENEMY_SPEED, 1f);
+            
+            anim.SetBool(AnimationStates.ENEMY_RUN, true);
+
+            rb.AddForce((navAgent.destination - transform.position) * chaseSpeed* Time.deltaTime );
+            transform.LookAt((navAgent.destination));
+
             anim.SetBool(AnimationStates.ENEMY_ATTACK, false);
         }
     }
@@ -110,8 +133,25 @@ public class Enemy_AI : MonoBehaviour
 
     void Run()
     {
-        Debug.LogError("run calısıooo");
        anim.SetBool(AnimationStates.ENEMY_RUN, true);
-        rb.AddForce((Player.transform.position - transform.position) * multiplier );
+        rb.AddForce((Player.transform.position - transform.position) * chaseSpeed );
+    }
+
+    void Walk()
+    {
+        anim.SetBool(AnimationStates.ENEMY_RUN, true);
+        transform.position = transform.position + new Vector3(Random.Range(-2f, 2f), 0f, Random.Range(-2f, 2f));
+        // rb.AddForce(new Vector3(Random.Range(-2f, 2f), 0f, Random.Range(-2f, 2f)) * walkSpeed );
+
+    }
+    void EnemyVictory()
+    {
+        victory = true;
+       // anim.SetBool(); victory animation bulunca burda aktif et
+    }
+
+    void EnemyVictoryFinish()
+    {
+        // anim.GetCurrentAnimatorStateInfo(0).IsName(victory) = false
     }
 }

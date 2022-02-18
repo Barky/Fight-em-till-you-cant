@@ -7,7 +7,7 @@ public class SwordFX : MonoBehaviour
 
     private MeleeWeaponTrail weaponTrail;
 
-    private Transform sword;
+    public Transform sword;
 
     public GameObject hitPoint;
     public GameObject slashThreeEffectprefab;
@@ -19,7 +19,7 @@ public class SwordFX : MonoBehaviour
 
     private void Awake()
     {
-        sword = GameObject.Find("Sword").transform;
+        
         weaponTrail = sword.GetComponent<MeleeWeaponTrail>();
         audioSource = gameObject.GetComponent<AudioSource>();
     }
@@ -32,6 +32,7 @@ public class SwordFX : MonoBehaviour
         {
             weaponTrail.Emit = true;
             hitPoint.SetActive(true);
+            Debug.LogError("hitpoint active skill 1");
 
             // audiosource.play sound1
         }

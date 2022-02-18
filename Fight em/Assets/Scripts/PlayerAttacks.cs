@@ -40,6 +40,7 @@ public class PlayerAttacks : MonoBehaviour
     public Transform SkillThreePoint_4;
     public Transform SkillThreePoint_5;
 
+
     private bool s1_notused, s2_notused, s3_notused;
 
     private void Awake()
@@ -121,6 +122,7 @@ public class PlayerAttacks : MonoBehaviour
     {
         if (_skillone)
         {
+
             anim.SetBool(AnimationStates.ANIM_SKILL_1, false);
         }
     }
@@ -128,6 +130,7 @@ public class PlayerAttacks : MonoBehaviour
     {
         if (_skilltwo)
         {
+
             Instantiate(SkillTwo_EffectPrefab, SkillTwo_Point.position, SkillTwo_Point.rotation);
             StartCoroutine(skilltwocoroutine());
         }
@@ -150,6 +153,7 @@ public class PlayerAttacks : MonoBehaviour
     {
         if (_skilltwo)
         {
+
             anim.SetBool(AnimationStates.ANIM_SKILL_2, false);
         }
     }
@@ -157,6 +161,7 @@ public class PlayerAttacks : MonoBehaviour
     {
         if (_skillthree)
         {
+
             Instantiate(SkillThree_EffectPrefab, SkillThreePoint_1.transform.position, SkillThreePoint_1.transform.rotation);
             Instantiate(SkillThree_EffectPrefab, SkillThreePoint_2.transform.position, SkillThreePoint_2.transform.rotation);
             Instantiate(SkillThree_EffectPrefab, SkillThreePoint_3.transform.position, SkillThreePoint_3.transform.rotation);
@@ -167,7 +172,8 @@ public class PlayerAttacks : MonoBehaviour
     void skillThreeEnd(bool _skillthree)
     {
         if (_skillthree)
-        {
+        {            
+
             anim.SetBool(AnimationStates.ANIM_SKILL_3, false);
 
         }

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 103264584}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 212122181}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 365681205}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 659839726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SkillThreePoint 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 803400143}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 846199457}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -189,7 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 897221174}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -219,7 +219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 949138183}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -249,7 +249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1068884163}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -279,7 +279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1103308029}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -309,7 +309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1168196883}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -339,7 +339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1266133686}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -369,7 +369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1325746311}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SkillTwoPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +405,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1436811082}
-  m_Layer: 0
+  - component: {fileID: 2757229296195700735}
+  - component: {fileID: 3232874234557004777}
+  m_Layer: 7
   m_Name: Hit Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,6 +428,37 @@ Transform:
   m_Father: {fileID: 3351094886466845259}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0.084, y: 0.069, z: 0.039}
+--- !u!114 &2757229296195700735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436811081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c82ce2b77c839448705979a70873e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3232874234557004777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436811081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4fcb8c13a7e294c8a765db0c614247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  radius: 1
+  hitPoint: {fileID: 1436811082}
+  damageCount: 20
+  attackEffect: {fileID: 100004, guid: 20747cbb589a10f418c2fd1d67647962, type: 3}
 --- !u!1 &1460306719
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1460306720}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SkillThreePoint 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1510499687}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -495,7 +528,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1583406483}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -525,7 +558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1607469511}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slash Three Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1678812737}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SkillThreePoint 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -585,7 +618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1742474322}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SkillThreePoint 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758016393}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SkillOnePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +686,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1806619783}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SkillThreePoint 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +716,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899380886}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -713,7 +746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2014256797}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -743,7 +776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2023203071}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +831,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910720}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fingers_2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -828,7 +861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: arm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -859,7 +892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910724}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -890,7 +923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -923,7 +956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910728}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -954,7 +987,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910730}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: eye_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -984,7 +1017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: arm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1016,7 +1049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4611901756668910734}
   - component: {fileID: 4611901756674608544}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: eyeR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1128,7 +1161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910736}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: trigger_2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1158,7 +1191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910738}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: knee_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1189,7 +1222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910740}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1223,7 +1256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910742}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1257,7 +1290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910744}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: trigger_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1288,7 +1321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910746}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: knee_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1319,7 +1352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910748}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: elbow_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1350,7 +1383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910750}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: trigger_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1381,7 +1414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910752}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toes_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1411,7 +1444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910754}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fingers_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910756}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toes_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1478,7 +1511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4611901756668910758}
   - component: {fileID: 4611901756674608546}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: eyeL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,7 +1623,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910760}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fingers_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1622,7 +1655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910762}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ankle_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1653,7 +1686,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910764}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: elbow_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1684,7 +1717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910766}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1716,7 +1749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910768}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: trigger_2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1747,7 +1780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4611901756668910770}
   - component: {fileID: 4611901756674608548}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ninja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1868,7 +1901,8 @@ GameObject:
   - component: {fileID: 7962855886085215173}
   - component: {fileID: 7962855886085215174}
   - component: {fileID: 7962855886085215181}
-  m_Layer: 0
+  - component: {fileID: 1023265204}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2061,6 +2095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db2e67f0e86a5f041848f23dd387cdbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sword: {fileID: 3351094886466845259}
   hitPoint: {fileID: 1436811081}
   slashThreeEffectprefab: {fileID: 100014, guid: 2f8ef9eb56c6f1d46a58225698863a6f, type: 3}
   thirdSlashPoint: {fileID: 1607469511}
@@ -2133,6 +2168,19 @@ MonoBehaviour:
   SkillThreePoint_3: {fileID: 1806619783}
   SkillThreePoint_4: {fileID: 1678812737}
   SkillThreePoint_5: {fileID: 659839726}
+--- !u!114 &1023265204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611901756669395156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9233372232f7b4d88334db821c7099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  realHealth: 100
 --- !u!1 &4611901756669395158
 GameObject:
   m_ObjectHideFlags: 0
@@ -2142,7 +2190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910774}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ankle_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2173,7 +2221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910776}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fingers_2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2203,7 +2251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910778}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hips_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2234,7 +2282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910780}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2266,7 +2314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910782}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hips_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2297,7 +2345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910784}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2329,7 +2377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910786}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: eye_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2359,7 +2407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611901756668910788}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: detail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2390,6 +2438,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a229fd5df6dddb04cb440920547ee4d3, type: 3}
       propertyPath: m_Name
       value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a229fd5df6dddb04cb440920547ee4d3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a229fd5df6dddb04cb440920547ee4d3, type: 3}
       propertyPath: m_RootOrder

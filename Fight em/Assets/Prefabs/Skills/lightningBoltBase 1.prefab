@@ -44,6 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7605ef13f155fdc46b5cb0c6726fbc94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  radius: 1
+  damageCount: 5
+  attackEffect: {fileID: 100010, guid: eff3c99881b6c5c4bac5fe6d942fe34e, type: 3}
 --- !u!114 &4686240267602511271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38720,6 +38726,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4a13ab1c84f5a848a4bf558373620b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillPrefabs: []
+  HowManyTime: 3
+  SpawnInterval: 3
+  x_Width: 0
+  y_Width: 0
+  z_Width: 0
+  x_RotMax: 0
+  y_RotMax: 180
+  z_RotMax: 0
+  AllUseSameRotation: 0
 --- !u!1 &100020
 GameObject:
   m_ObjectHideFlags: 0
