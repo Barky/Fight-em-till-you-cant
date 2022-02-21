@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerAttacks : MonoBehaviour
 {
@@ -43,19 +44,57 @@ public class PlayerAttacks : MonoBehaviour
 
     private bool s1_notused, s2_notused, s3_notused;
 
+    private Button skill1button, skill2button, skill3button;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
         s1_notused = true;
         s2_notused = true;
         s3_notused = true;
+
+        skill1button = GameObject.Find("Skill1Button").GetComponent<Button>();
+        skill2button = GameObject.Find("Skill2Button").GetComponent<Button>();
+        skill3button = GameObject.Find("Skill3Button ").GetComponent<Button>();
+        
+        skill1button.onClick.AddListener(() => SkillOneButton());
+        skill2button.onClick.AddListener(() => SkillTwoButton());
+        skill3button.onClick.AddListener(() => SkillThreeButton());
+
     }
     private void Update()
     {
-        GetButtons();
+        KeyboardControls();
     }
 
-    void GetButtons()
+    public void AttackButtonClick()
+    {
+        anim.SetBool(AnimationStates.ANIM_ATTACK, true);
+
+    }
+    public void AttackButtonRelease()
+    {
+        anim.SetBool(AnimationStates.ANIM_ATTACK, false);
+
+    }
+
+    public void SkillOneButton()
+    {
+        anim.SetBool(AnimationStates.ANIM_SKILL_1, true);
+
+    }
+    public void SkillTwoButton()
+    {
+        anim.SetBool(AnimationStates.ANIM_SKILL_2, true);
+
+    }
+    
+    public void SkillThreeButton()
+    {
+        anim.SetBool(AnimationStates.ANIM_SKILL_3, true);
+
+    }
+    void KeyboardControls()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
@@ -195,4 +234,5 @@ public class PlayerAttacks : MonoBehaviour
         }
     }
 
+    
 }
