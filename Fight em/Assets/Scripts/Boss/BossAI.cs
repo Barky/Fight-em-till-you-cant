@@ -57,7 +57,6 @@ public class BossAI : MonoBehaviour
                     anim.SetBool("Skill1", true);
                     anim.SetBool("Skill2", false);
                     anim.SetBool("Skill3", false);
-                    Debug.Log("skill 1 calisti");
                 }
 
                 if (distance <= skill2Distance && distance > skill3Distance)
@@ -65,7 +64,6 @@ public class BossAI : MonoBehaviour
                     anim.SetBool("Skill1", false);
                     anim.SetBool("Skill2", true);
                     anim.SetBool("Skill3", false);
-                    Debug.Log("skill 2 calisti");
 
                 }
 
@@ -74,7 +72,6 @@ public class BossAI : MonoBehaviour
                     anim.SetBool("Skill1", false);
                     anim.SetBool("Skill2", false);
                     anim.SetBool("Skill3", true);
-                    Debug.Log("skill 3 calisti");
 
                 }
             }
