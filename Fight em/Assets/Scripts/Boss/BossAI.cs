@@ -10,6 +10,8 @@ public class BossAI : MonoBehaviour
     private PlayerHealth playerHealth;
     private BossHealth bossHealth;
 
+    public float walkDistance = 8f, skill1Distance = 5f, skill2Distance = 4f, skill3Distance = 2.5f;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -39,7 +41,7 @@ public class BossAI : MonoBehaviour
 
         if (playerHealth.realHealth > 0)
         {
-            if (distance > 8f)
+            if (distance > walkDistance)
             {
                 anim.SetBool("Walk", true);
                 anim.SetBool("Skill1", false);
@@ -50,29 +52,29 @@ public class BossAI : MonoBehaviour
             {
                 anim.SetBool("Walk", false);
 
-                if (distance > 5.5f)
+                if (distance > skill1Distance)
                 {
                     anim.SetBool("Skill1", true);
                     anim.SetBool("Skill2", false);
                     anim.SetBool("Skill3", false);
-                    Debug.LogError("skill 1 calisti");
+                    Debug.Log("skill 1 calisti");
                 }
 
-                if (distance <= 4f && distance > 2.5f)
+                if (distance <= skill2Distance && distance > skill3Distance)
                 {
                     anim.SetBool("Skill1", false);
                     anim.SetBool("Skill2", true);
                     anim.SetBool("Skill3", false);
-                    Debug.LogError("skill 2 calisti");
+                    Debug.Log("skill 2 calisti");
 
                 }
 
-                if (distance <= 2.5f)
+                if (distance <= skill3Distance)
                 {
                     anim.SetBool("Skill1", false);
                     anim.SetBool("Skill2", false);
                     anim.SetBool("Skill3", true);
-                    Debug.LogError("skill 3 calisti");
+                    Debug.Log("skill 3 calisti");
 
                 }
             }

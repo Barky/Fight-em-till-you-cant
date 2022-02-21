@@ -259,4 +259,34 @@ MonoBehaviour:
         conditions: []
       critical: 0
       isEnable: 1
+  - animatorController: {fileID: 9100000, guid: 09cab020fee16432ba38823221662a31, type: 2}
+    layer: 0
+    stateNameHash: -2058977343
+    events:
+    - functionName: Skill1
+      normalizedTime: 0.2
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 9100000, guid: 09cab020fee16432ba38823221662a31, type: 2}
+    layer: 0
+    stateNameHash: 1799888621
+    events:
+    - functionName: Skill3
+      normalizedTime: 0.15
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
   lastEdit: {fileID: 0}
