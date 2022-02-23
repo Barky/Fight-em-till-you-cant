@@ -1900,6 +1900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4611901756668910772}
   - component: {fileID: 4611901756678796128}
+  - component: {fileID: 4976412524274169842}
   - component: {fileID: 2372805547686023360}
   - component: {fileID: 8623648438461163029}
   - component: {fileID: 6721304940641150083}
@@ -1953,6 +1954,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4976412524274169842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611901756669395156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce5d56aa378219b4689126fc87f34fb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 0}
 --- !u!54 &2372805547686023360
 Rigidbody:
   m_ObjectHideFlags: 0
