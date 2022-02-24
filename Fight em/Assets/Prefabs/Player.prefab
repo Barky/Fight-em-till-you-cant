@@ -464,7 +464,7 @@ MonoBehaviour:
     m_Bits: 256
   radius: 1
   hitPoint: {fileID: 1436811082}
-  damageCount: 20
+  damageCount: 10
   attackEffect: {fileID: 100004, guid: 20747cbb589a10f418c2fd1d67647962, type: 3}
 --- !u!1 &1460306719
 GameObject:
@@ -2099,7 +2099,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4611901756669395156}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19a23adf367af1242803f2c30243f7d6, type: 3}
   m_Name: 
@@ -2127,7 +2127,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4611901756669395156}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c01e09bdba48a542a9f041d4ef38943, type: 3}
   m_Name: 

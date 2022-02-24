@@ -38,6 +38,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
+        
         if (realHealth <= 0)
         {
             realHealth = 0;
@@ -83,6 +84,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         realHealth -= amount;
+        Debug.LogError(realHealth);
         if (realHealth <= 0)
         {
             realHealth = 0;

@@ -22,7 +22,7 @@ public class JoystickController : MonoBehaviour
         if (joystick.Horizontal != 0 || joystick.Vertical !=0)
         {
             float angle = Mathf.Atan2(joystick.Vertical, joystick.Horizontal) * Mathf.Rad2Deg;
-            player.rotation = Quaternion.Euler(new Vector3(0, -angle - 45, 0));
+            player.rotation = Quaternion.Euler(new Vector3(0, -angle, 0));
             anim.SetBool(AnimationStates.ANIM_RUN, true);
         }
         else

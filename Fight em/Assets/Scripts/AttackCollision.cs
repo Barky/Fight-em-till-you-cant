@@ -39,7 +39,7 @@ public class AttackCollision : MonoBehaviour
             {
                 enemyHealth.EnemyTakeDamage(damageCount);
                 Instantiate(attackEffect, hitPoint.position, hitPoint.rotation);
-                iscollided = false;
+                hitPoint.gameObject.SetActive(false);
 
             }
             

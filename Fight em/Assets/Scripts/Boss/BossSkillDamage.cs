@@ -30,12 +30,12 @@ public class BossSkillDamage : MonoBehaviour
             {
                 continue;
             }
-            // çok fazla hasar verio onu düzelticez çok çalýþýyo
             iscollided = true;
             if (iscollided)
             {
                 playerHealth.TakeDamage(damageCount);
-                iscollided = false;
+                gameObject.SetActive(false);
+
             }
         }
 

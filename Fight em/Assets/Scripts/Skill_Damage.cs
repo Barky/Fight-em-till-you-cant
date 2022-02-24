@@ -33,7 +33,7 @@ public class Skill_Damage : MonoBehaviour
             {
                 enemyHealth.EnemyTakeDamage(damageCount);
                 Instantiate(attackEffect, transform.position, transform.rotation);
-                iscollided = false;
+                gameObject.SetActive(false);
 
             }
             

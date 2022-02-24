@@ -102,7 +102,7 @@ public class Enemy_AI : MonoBehaviour
             navAgent.SetDestination(navpoints[navIndex].position);
             anim.SetBool(AnimationStates.ENEMY_RUN, true);
 
-            rb.AddForce((navAgent.destination - transform.position) * chaseSpeed * Time.deltaTime);
+            rb.AddForce((navAgent.destination - transform.position) * chaseSpeed * Time.deltaTime, ForceMode.Acceleration);
             transform.LookAt((navAgent.destination));
         }
         else
@@ -110,7 +110,7 @@ public class Enemy_AI : MonoBehaviour
             
             anim.SetBool(AnimationStates.ENEMY_RUN, true);
 
-            rb.AddForce((navAgent.destination - transform.position) * chaseSpeed* Time.deltaTime );
+            rb.AddForce((navAgent.destination - transform.position) * chaseSpeed* Time.deltaTime, ForceMode.Acceleration );
             transform.LookAt((navAgent.destination));
 
             anim.SetBool(AnimationStates.ENEMY_ATTACK, false);
@@ -134,7 +134,7 @@ public class Enemy_AI : MonoBehaviour
     void Run()
     {
        anim.SetBool(AnimationStates.ENEMY_RUN, true);
-        rb.AddForce((Player.transform.position - transform.position) * chaseSpeed );
+        rb.AddForce((Player.transform.position - transform.position) * chaseSpeed, ForceMode.Acceleration );
     }
 
     void Walk()

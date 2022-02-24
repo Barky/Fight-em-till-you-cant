@@ -19418,7 +19418,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100010}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 825946bb254314d4b841298b73fa9ae8, type: 3}
   m_Name: 
@@ -19427,7 +19427,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 247
   skillPrefab: {fileID: 100014, guid: 654746e5424740344851ed984f7ac7ce, type: 3}
-  radius: 0.2
+  radius: 0.53
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19541,4 +19541,4 @@ MonoBehaviour:
     m_Bits: 256
   radius: 1
   damageCount: 10
-  attackEffect: {fileID: 0}
+  attackEffect: {fileID: 100010}

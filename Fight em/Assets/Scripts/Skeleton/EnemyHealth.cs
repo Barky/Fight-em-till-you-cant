@@ -70,7 +70,7 @@ public class EnemyHealth : MonoBehaviour
     public void EnemyTakeDamage(float amount)
     {
         realHealth -= amount;
-Debug.LogError("enemy: "+realHealth);
+        Debug.LogError("enemy: "+realHealth);
         if (realHealth <= 0)
         {
             realHealth = 0;

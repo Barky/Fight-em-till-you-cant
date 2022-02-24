@@ -36,7 +36,7 @@ public class EnemyAttackCollision : MonoBehaviour
             if (iscollided)
             {
                 playerHealth.TakeDamage(damageCount);
-                iscollided = false;
+                hitPoint.gameObject.SetActive(false);
             }
         }
 
