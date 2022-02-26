@@ -19474,7 +19474,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   radius: 0.4
-  damageCount: 0
+  damageCount: 5
 --- !u!1 &100012
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator FirstLoading()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         LoadingScreen.gameObject.SetActive(false);
         mainmenuui.gameObject.SetActive(true);
     }
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     {
         mainmenuui.gameObject.SetActive(false);
         LoadingScreen.gameObject.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         AsyncOperation asyncload = SceneManager.LoadSceneAsync("Game");
         while (!asyncload.isDone) yield return null;
 

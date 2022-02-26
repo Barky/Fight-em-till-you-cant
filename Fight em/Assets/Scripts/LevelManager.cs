@@ -20,8 +20,10 @@ public class LevelManager : MonoBehaviour
     {
         // leveltext = GameObject.Find("/UI/Canvas/levelText").GetComponent<Text>();
         // leveltext.text = "Level = " + GameManager.instance.levelno.ToString();
-        Instantiate(levels[0], transform);
-        
+        // GameObject newlevel = Instantiate(levels[0], Vector3.zero, Quaternion.identity);
+        // newlevel.transform.parent = transform;
+        //Instantiate(levels[0], transform);
+
     }
 
     
